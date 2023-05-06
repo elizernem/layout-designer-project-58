@@ -1,0 +1,22 @@
+.title {
+  font-family: "Neucha";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+
+  &--big {
+    font-size: 72px;
+    line-height: 86px;
+  }
+
+  &--small {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  &--extra-small {
+    font-size: 34px;
+    line-height: 41px;
+  }
+}

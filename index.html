@@ -11,23 +11,26 @@
       href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
   </head>
   <body>
     <header class="header pattern">
-      <div class="header__wrapper left">
-        <h1 class="header__title">
+      <div class="header__wrapper wrapper">
+        <h1 class="header__title title title--big left">
           <span class="header__colored-text colored colored--contrast"
             >Когнитивные искажения</span
-          >в программировании
+          >
+          в программировании
         </h1>
+        <img
+          class="header__img right"
+          src="img/header.png"
+          alt="Человечек за ноутбуком."
+          width="952"
+          height="444"
+        />
       </div>
-      <img
-        class="header__img right"
-        src="img/header.jpg"
-        alt="Человечек за ноутбуком."
-      />
-      <div class="header__description">
+      <div class="header__wrapper wrapper">
         <div class="header__text left">
           <p>
             Мы, разработчики, часто сталкиваемся с проблемами, которые идут
@@ -52,9 +55,9 @@
     <main class="main">
       <section class="intro">
         <h2 class="intro__title title">
-          Что же это такое,
-          <span class="intro__colored-text colored colored--contrast"
-            >когнитивные искажения?</span
+          Что же это такое,<br />
+          <span class="intro__colored-text colored colored--contrast">
+            когнитивные искажения?</span
           >
         </h2>
         <span class="intro__note note note--small"
@@ -67,8 +70,10 @@
           >
             <img
               class="video__media"
-              src="img/video.jpg"
+              src="img/video.png"
               alt="Когнитивные искажения."
+              width="919"
+              height="569"
             />
           </a>
           <button
@@ -76,26 +81,28 @@
             type="button"
             aria-label="Запустить видео"
           >
-            <svg width="51" height="62" viewBox="0 0 51 62">
+            <svg class="video__svg" width="51" height="62" viewBox="0 0 51 62">
               <path
                 class="video__button-icon"
                 d="M51 31.0515L-2.77326e-06 61.8495L-1.99111e-07 0.253482L51 31.0515Z"
-                fill="white"
               />
             </svg>
           </button>
         </div>
       </section>
       <section class="biases" id="biases">
-        <h2 class="biases__title">
+        <h2 class="biases__title title title--small">
           <span class="biases__colored-text colored colored--contrast"
-            >5 когнитивных искажений</span
-          >о существовании которых стоит помнить
+            >5 когнитивных искажений<br
+          /></span>
+          о существовании которых стоит помнить
         </h2>
         <ul class="biases__list">
           <li class="biases__item">
             <a class="biases__link" href="#ikea">
-              <h3 class="biases__subtitle subtitle colored colored--contrast">
+              <h3
+                class="biases__title title title--extra-small colored colored--contrast"
+              >
                 Эффект ИКЕА
               </h3>
               <p class="biases__description">
@@ -106,7 +113,9 @@
           </li>
           <li class="biases__item">
             <a class="biases__link" href="#optimization">
-              <h3 class="biases__subtitle subtitle colored colored--contrast">
+              <h3
+                class="biases__title title title--extra-small colored colored--contrast"
+              >
                 Преждевременная оптимизация
               </h3>
               <p class="biases__description">
@@ -117,7 +126,9 @@
           </li>
           <li class="biases__item">
             <a class="biases__link" href="#new">
-              <h3 class="biases__subtitle subtitle colored colored--contrast">
+              <h3
+                class="biases__title title title--extra-small colored colored--contrast"
+              >
                 Искажение новизны
               </h3>
               <p class="biases__description">
@@ -128,7 +139,9 @@
           </li>
           <li class="biases__item">
             <a class="biases__link" href="#devaluation">
-              <h3 class="biases__subtitle subtitle colored colored--contrast">
+              <h3
+                class="biases__title title title--extra-small colored colored--contrast"
+              >
                 Гиперболическое обесценивание
               </h3>
               <p class="biases__description">
@@ -139,7 +152,9 @@
           </li>
           <li class="biases__item">
             <a class="biases__link" href="#planning">
-              <h3 class="biases__subtitle subtitle colored colored--contrast">
+              <h3
+                class="biases__title title title--extra-small colored colored--contrast"
+              >
                 Ошибка планирования
               </h3>
               <p class="biases__description">
@@ -151,163 +166,195 @@
         </ul>
       </section>
       <section class="ikea pattern" id="ikea">
-        <img
-          class="ikea__img left"
-          src="img/ikea.jpg"
-          alt="Два человечка за ноутбуком удивляются."
-        />
-        <div class="ikea__wrapper right">
-          <span class="ikea__note note">Когнитивные искажения</span>
-          <h2 class="ikea__title title">Эффект ИКЕА</h2>
-          <p class="ikea__summary summary">
-            Вы переоцениваете собственные решения, и, как следствие,
-            недооцениваете решения других.
-          </p>
+        <div class="ikea__wrapper wrapper">
+          <img
+            class="ikea__img left"
+            src="img/ikea.png"
+            alt="Два человечка за ноутбуком удивляются."
+            width="578"
+            height="434"
+          />
+          <div class="ikea__container right">
+            <span class="ikea__note note">Когнитивные искажения</span>
+            <h2 class="ikea__title title">Эффект ИКЕА</h2>
+            <p class="ikea__summary summary">
+              Вы переоцениваете собственные решения, и, как следствие,
+              недооцениваете решения других.
+            </p>
+          </div>
         </div>
         <div class="ikea__info info">
           <h3 class="info__title colored colored--primary bg bg--basic">
             Как проявляется
           </h3>
-          <p class="info__description colored colored--secondary">
-            Когнитивное искажение называется так из-за того, что потребители
-            зачастую предпочитают покупать товары, которые они могут собрать
-            сами, а не уже собранные кем-то.
-          </p>
-          <p class="info__description colored colored--secondary">
-            Мы склонны переоцнивать наши собственные решения и недооценивать
-            решения других. Если вы когда-то работали в компании, которая
-            использовала тупой внутренний инструмент вместо более удобного
-            готового решения, вы понимаете, о чём я говорю.
-          </p>
+          <div class="info__wrapper wrapper">
+            <p class="info__description colored colored--secondary left">
+              Когнитивное искажение называется так из-за того, что потребители
+              зачастую предпочитают покупать товары, которые они могут собрать
+              сами, а не уже собранные кем-то.
+            </p>
+            <p class="info__description colored colored--secondary right">
+              Мы склонны переоцнивать наши собственные решения и недооценивать
+              решения других. Если вы когда-то работали в компании, которая
+              использовала тупой внутренний инструмент вместо более удобного
+              готового решения, вы понимаете, о чём я говорю.
+            </p>
+          </div>
         </div>
       </section>
       <section class="optimization pattern" id="optimization">
-        <img
-          class="optimization__img right"
-          src="img/optimization.jpg"
-          alt="Человечек запускает ракету из ноутбука."
-        />
-        <div class="optimization__wrapper left">
-          <span class="optimization__note note">Когнитивные искажения</span>
-          <h2 class="optimization__title title">Преждевременная оптимизация</h2>
-          <p class="optimization__summary summary">
-            Вы оптимизируете что-то задолго до того, как в этом появляется
-            необходимость.
-          </p>
+        <div class="optimization__wrapper wrapper">
+          <img
+            class="optimization__img right"
+            src="img/optimization.png"
+            alt="Человечек запускает ракету из ноутбука."
+            width="578"
+            height="434"
+          />
+          <div class="optimization__container left">
+            <span class="optimization__note note">Когнитивные искажения</span>
+            <h2 class="optimization__title title">
+              Преждевременная оптимизация
+            </h2>
+            <p class="optimization__summary summary">
+              Вы оптимизируете что-то задолго до того, как в этом появляется
+              необходимость.
+            </p>
+          </div>
         </div>
         <div class="optimization__info info">
           <h3 class="info__title bg bg--primary colored colored--basic">
             Как проявляется
           </h3>
-          <p class="info__description colored colored--primary">
-            Если вы добавите аэродинамический спойлер к своему старому
-            автомобилю вместо ремонта мотора, то автомобиль не станет быстрее.
-          </p>
-          <p class="info__description colored colored--primary">
-            Отличный пример: писать максимально подтюненный и
-            высокопроизводительный код для всего лишь экспериментального
-            проекта.
-          </p>
+          <div class="info__wrapper wrapper">
+            <p class="info__description colored colored--primary left">
+              Если вы добавите аэродинамический спойлер к своему старому
+              автомобилю вместо ремонта мотора, то автомобиль не станет быстрее.
+            </p>
+            <p class="info__description colored colored--primary right">
+              Отличный пример: писать максимально подтюненный и
+              высокопроизводительный код для всего лишь экспериментального
+              проекта.
+            </p>
+          </div>
         </div>
       </section>
       <section class="new pattern" id="new">
-        <img
-          class="new__img left"
-          src="img/new.jpg"
-          alt="Человечек рядом с выброшенными в мусор идеями держит светящуюся лампочку."
-        />
-        <div class="new__wrapper right">
-          <span class="new__note note">Когнитивные искажения</span>
-          <h2 class="new__title title">Искажение новизны</h2>
-          <p class="new__summary summary">
-            Вы даёте более высокую оценку тем событиям, которые произошли
-            недавно, и недооцениваете более старые.
-          </p>
+        <div class="new__wrapper wrapper">
+          <img
+            class="new__img left"
+            src="img/new.png"
+            alt="Человечек рядом с выброшенными в мусор идеями держит светящуюся лампочку."
+            width="578"
+            height="434"
+          />
+          <div class="new__container right">
+            <span class="new__note note">Когнитивные искажения</span>
+            <h2 class="new__title title">Искажение новизны</h2>
+            <p class="new__summary summary">
+              Вы даёте более высокую оценку тем событиям, которые произошли
+              недавно, и недооцениваете более старые.
+            </p>
+          </div>
         </div>
         <div class="new__info info">
           <h3 class="info__title bg bg--basic colored colored--primary">
             Как проявляется
           </h3>
-          <p class="info__description colored colored--secondary">
-            Часто это искажение настигает нас, когда нужно решение проблемы и…
-            о! Мы как раз только что решили подобную проблему! Давайте
-            использовать это же решение, потому что оно сработало, и мы помним
-            как!
-          </p>
-          <p class="info__description colored colored--secondary">
-            Вы замечаете, что пользуетесь теми же рабочими методиками раз за
-            разом? Если да, возможно, вы смотрите на разные проблемы под одним и
-            тем же углом.
-          </p>
+          <div class="info__wrapper wrapper">
+            <p class="info__description colored colored--secondary left">
+              Часто это искажение настигает нас, когда нужно решение проблемы и…
+              о! Мы как раз только что решили подобную проблему! Давайте
+              использовать это же решение, потому что оно сработало, и мы помним
+              как!
+            </p>
+            <p class="info__description colored colored--secondary right">
+              Вы замечаете, что пользуетесь теми же рабочими методиками раз за
+              разом? Если да, возможно, вы смотрите на разные проблемы под одним
+              и тем же углом.
+            </p>
+          </div>
         </div>
       </section>
       <section class="devaluation pattern" id="devaluation">
-        <img
-          class="devaluation__img right"
-          src="img/devaluation.jpg"
-          alt="Человечек собирает монетки перед горой, за которой спрятан целый клад."
-        />
-        <div class="devaluation__wrapper left">
-          <span class="devaluation__note note">Когнитивные искажения</span>
-          <h2 class="devaluation__title title">
-            Гиперболическое обесценивание
-          </h2>
-          <p class="devaluation__summary summary">
-            Вы гонитесь за немедленной маленькой выгодой и игнорируете более
-            крупную, недоступную сейчас, но доступную в будущем.
-          </p>
+        <div class="devaluation__wrapper wrapper">
+          <img
+            class="devaluation__img right"
+            src="img/devaluation.png"
+            alt="Человечек собирает монетки перед горой, за которой спрятан целый клад."
+            width="578"
+            height="434"
+          />
+          <div class="devaluation__container left">
+            <span class="devaluation__note note">Когнитивные искажения</span>
+            <h2 class="devaluation__title title">
+              Гиперболическое обесценивание
+            </h2>
+            <p class="devaluation__summary summary">
+              Вы гонитесь за немедленной маленькой выгодой и игнорируете более
+              крупную, недоступную сейчас, но доступную в будущем.
+            </p>
+          </div>
         </div>
         <div class="devaluation__info info">
           <h3 class="info__title bg bg--primary colored colored--basic">
             Как проявляется
           </h3>
-          <p class="info__description colored colored--primary">
-            Вы когда-нибудь откладывали написание теста? Ловили себя на
-            использовании клавиш-стрелок в Vim? Поздравляю, у вас наблюдается
-            гиперболическое обесценивание.
-          </p>
-          <p class="info__description colored colored--primary">
-            Немедленная выгода от использования чего-то быстродоступного
-            значительно смягчает боль, которую нужно перетерпеть, чтобы усвоить
-            правильный синтаксис для перемещения на нужную строчку. Но как
-            только вы поймёте как перемещаться быстрее, выгода в будущем намного
-            выше. В итоге вы сохраните много времени.
-          </p>
+          <div class="info__wrapper wrapper">
+            <p class="info__description colored colored--primary left">
+              Вы когда-нибудь откладывали написание теста? Ловили себя на
+              использовании клавиш-стрелок в Vim? Поздравляю, у вас наблюдается
+              гиперболическое обесценивание.
+            </p>
+            <p class="info__description colored colored--primary right">
+              Немедленная выгода от использования чего-то быстродоступного
+              значительно смягчает боль, которую нужно перетерпеть, чтобы
+              усвоить правильный синтаксис для перемещения на нужную строчку. Но
+              как только вы поймёте как перемещаться быстрее, выгода в будущем
+              намного выше. В итоге вы сохраните много времени.
+            </p>
+          </div>
         </div>
       </section>
       <section class="planning pattern" id="planning">
-        <img
-          class="planning__img left"
-          src="img/planning.jpg"
-          alt="Человечек рядом с выброшенными в мусор идеями держит светящуюся лампочку."
-        />
-        <div class="planning__wrapper right">
-          <span class="planning__note note">Когнитивные искажения</span>
-          <h2 class="planning__title title">Ошибка планирования</h2>
-          <p class="planning__summary summary">
-            Неправильно рассчитывать время необходимое для завершения задачи.
-          </p>
+        <div class="planning__wrapper wrapper">
+          <img
+            class="planning__img left"
+            src="img/planning.png"
+            alt="Человечек рядом с выброшенными в мусор идеями держит светящуюся лампочку."
+            width="578"
+            height="434"
+          />
+          <div class="planning__container right">
+            <span class="planning__note note">Когнитивные искажения</span>
+            <h2 class="planning__title title">Ошибка планирования</h2>
+            <p class="planning__summary summary">
+              Неправильно рассчитывать время необходимое для завершения задачи.
+            </p>
+          </div>
         </div>
         <div class="planning__info info">
           <h3 class="info__title bg bg--basic colored colored--primary">
             Как проявляется
           </h3>
-          <p class="info__description colored colored--secondary">
-            Одно из искажений, которое должно признать большинство из нас. И
-            менеджеры проекта, и сами пользователи продукта — все склонны
-            ставить сроки, в которые невозможно закончить запланированное.
-          </p>
-          <p class="info__description colored colored--secondary">
-            Это отлично выражается в старом афоризме: Первые 90% готового кода
-            отнимают первые 90% времени разработки. Оставшиеся 10% отнимают
-            вторые 90% времени разработки.
-          </p>
+          <div class="info__wrapper wrapper">
+            <p class="info__description colored colored--secondary left">
+              Одно из искажений, которое должно признать большинство из нас. И
+              менеджеры проекта, и сами пользователи продукта — все склонны
+              ставить сроки, в которые невозможно закончить запланированное.
+            </p>
+            <p class="info__description colored colored--secondary right">
+              Это отлично выражается в старом афоризме: Первые 90% готового кода
+              отнимают первые 90% времени разработки. Оставшиеся 10% отнимают
+              вторые 90% времени разработки.
+            </p>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <section class="footer__mail mail">
-        <h2 class="mail__subtitle subtitle">
+        <h2 class="mail__title title">
           Хотите узнать больше? Подпишитесь на обновления
         </h2>
         <form class="mail__form" action="#" method="post">
