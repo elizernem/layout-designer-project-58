@@ -1,0 +1,48 @@
+.mail {
+  position: relative;
+  padding: 55px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mail__title {
+  margin: 0;
+}
+
+.mail__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail__label {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.mail__input {
+  padding: 17px;
+  border: none;
+}
+
+.mail__input::placeholder {
+  font-size: 13.1px;
+  line-height: 21px;
+  color: #757575;
+  opacity: 0.2;
+}
+
+.mail__button {
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-image: url(../img/icons/send.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border: none;
+  padding: 0;
+  top: 84px;
+  left: calc(100% - 124px);
+}

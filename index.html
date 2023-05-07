@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
   <body>
-    <header class="header pattern">
+    <header class="header bg bg--light pattern">
       <div class="header__wrapper wrapper">
-        <h1 class="header__title title title--big left">
+        <h1
+          class="header__title title title--big colored colored--secondary left"
+        >
           <span class="header__colored-text colored colored--contrast"
             >Когнитивные искажения</span
           >
@@ -30,7 +32,7 @@
           height="444"
         />
       </div>
-      <div class="header__wrapper wrapper">
+      <div class="header__container wrapper">
         <div class="header__text left">
           <p>
             Мы, разработчики, часто сталкиваемся с проблемами, которые идут
@@ -50,23 +52,27 @@
           </p>
         </div>
       </div>
-      <a class="header__link" href="#biases">подробнее</a>
+      <a
+        class="header__link bg bg--contrast colored colored--primary"
+        href="#biases"
+        >подробнее</a
+      >
     </header>
     <main class="main">
       <section class="intro">
-        <h2 class="intro__title title">
+        <h2 class="intro__title title colored colored--secondary">
           Что же это такое,<br />
           <span class="intro__colored-text colored colored--contrast">
             когнитивные искажения?</span
           >
         </h2>
-        <span class="intro__note note note--small"
+        <span class="intro__note note note--small colored colored--dark"
           >Что такое когнитивные искажения. Petrovna Channel</span
         >
         <div class="intro__video video">
           <a
             class="video__link"
-            href="https://www.youtube.com/watch?v=wEwGBIr_RIw"
+            href="https://providosiki.ru/watch/jie9AizBqss/chto-takoe-kognitivnie-iskazheniya/"
           >
             <img
               class="video__media"
@@ -90,8 +96,9 @@
           </button>
         </div>
       </section>
-      <section class="biases" id="biases">
-        <h2 class="biases__title title title--small">
+      <hr class="line bg bg--dark" />
+      <section class="biases bg bg--dark" id="biases">
+        <h2 class="biases__title title title--small colored colored--primary">
           <span class="biases__colored-text colored colored--contrast"
             >5 когнитивных искажений<br
           /></span>
@@ -105,7 +112,7 @@
               >
                 Эффект ИКЕА
               </h3>
-              <p class="biases__description">
+              <p class="biases__description colored colored--secondary">
                 Вы переоцениваете собственные решения, и, как следствие,
                 недооцениваете решения других.
               </p>
@@ -118,7 +125,7 @@
               >
                 Преждевременная оптимизация
               </h3>
-              <p class="biases__description">
+              <p class="biases__description colored colored--secondary">
                 Вы оптимизируете что-то задолго до того, как в этом появляется
                 необходимость.
               </p>
@@ -131,7 +138,7 @@
               >
                 Искажение новизны
               </h3>
-              <p class="biases__description">
+              <p class="biases__description colored colored--secondary">
                 Вы даёте более высокую оценку тем событиям, которые произошли
                 недавно, и недооцениваете более старые.
               </p>
@@ -144,7 +151,7 @@
               >
                 Гиперболическое обесценивание
               </h3>
-              <p class="biases__description">
+              <p class="biases__description colored colored--secondary">
                 Вы гонитесь за немедленной маленькой выгодой и игнорируете более
                 крупную, недоступную сейчас, но доступную в будущем.
               </p>
@@ -157,7 +164,7 @@
               >
                 Ошибка планирования
               </h3>
-              <p class="biases__description">
+              <p class="biases__description colored colored--secondary">
                 Неправильно рассчитывать время необходимое для завершения
                 задачи.
               </p>
@@ -165,8 +172,8 @@
           </li>
         </ul>
       </section>
-      <section class="ikea pattern" id="ikea">
-        <div class="ikea__wrapper wrapper">
+      <section class="ikea bg bg--light pattern" id="ikea">
+        <div class="ikea__wrapper wrapper container">
           <img
             class="ikea__img left"
             src="img/ikea.png"
@@ -175,9 +182,13 @@
             height="434"
           />
           <div class="ikea__container right">
-            <span class="ikea__note note">Когнитивные искажения</span>
-            <h2 class="ikea__title title">Эффект ИКЕА</h2>
-            <p class="ikea__summary summary">
+            <span class="ikea__note note colored colored--additional"
+              >Когнитивные искажения</span
+            >
+            <h2 class="ikea__title title colored colored--secondary">
+              Эффект ИКЕА
+            </h2>
+            <p class="ikea__summary colored colored--secondary summary">
               Вы переоцениваете собственные решения, и, как следствие,
               недооцениваете решения других.
             </p>
@@ -202,8 +213,8 @@
           </div>
         </div>
       </section>
-      <section class="optimization pattern" id="optimization">
-        <div class="optimization__wrapper wrapper">
+      <section class="optimization bg bg--basic pattern" id="optimization">
+        <div class="optimization__wrapper wrapper container">
           <img
             class="optimization__img right"
             src="img/optimization.png"
@@ -212,11 +223,14 @@
             height="434"
           />
           <div class="optimization__container left">
-            <span class="optimization__note note">Когнитивные искажения</span>
-            <h2 class="optimization__title title">
+            <span
+              class="optimization__note note colored colored--additional-light"
+              >Когнитивные искажения</span
+            >
+            <h2 class="optimization__title colored colored--primary title">
               Преждевременная оптимизация
             </h2>
-            <p class="optimization__summary summary">
+            <p class="optimization__summary colored colored--primary summary">
               Вы оптимизируете что-то задолго до того, как в этом появляется
               необходимость.
             </p>
@@ -239,8 +253,8 @@
           </div>
         </div>
       </section>
-      <section class="new pattern" id="new">
-        <div class="new__wrapper wrapper">
+      <section class="new bg bg--light pattern" id="new">
+        <div class="new__wrapper wrapper container">
           <img
             class="new__img left"
             src="img/new.png"
@@ -249,9 +263,13 @@
             height="434"
           />
           <div class="new__container right">
-            <span class="new__note note">Когнитивные искажения</span>
-            <h2 class="new__title title">Искажение новизны</h2>
-            <p class="new__summary summary">
+            <span class="new__note note colored colored--additional"
+              >Когнитивные искажения</span
+            >
+            <h2 class="new__title colored colored--secondary title">
+              Искажение новизны
+            </h2>
+            <p class="new__summary colored colored--secondary summary">
               Вы даёте более высокую оценку тем событиям, которые произошли
               недавно, и недооцениваете более старые.
             </p>
@@ -276,8 +294,8 @@
           </div>
         </div>
       </section>
-      <section class="devaluation pattern" id="devaluation">
-        <div class="devaluation__wrapper wrapper">
+      <section class="devaluation bg bg--basic pattern" id="devaluation">
+        <div class="devaluation__wrapper wrapper container">
           <img
             class="devaluation__img right"
             src="img/devaluation.png"
@@ -286,11 +304,14 @@
             height="434"
           />
           <div class="devaluation__container left">
-            <span class="devaluation__note note">Когнитивные искажения</span>
-            <h2 class="devaluation__title title">
+            <span
+              class="devaluation__note note colored colored--additional-light"
+              >Когнитивные искажения</span
+            >
+            <h2 class="devaluation__title title colored colored--primary">
               Гиперболическое обесценивание
             </h2>
-            <p class="devaluation__summary summary">
+            <p class="devaluation__summary colored colored--primary summary">
               Вы гонитесь за немедленной маленькой выгодой и игнорируете более
               крупную, недоступную сейчас, но доступную в будущем.
             </p>
@@ -316,8 +337,8 @@
           </div>
         </div>
       </section>
-      <section class="planning pattern" id="planning">
-        <div class="planning__wrapper wrapper">
+      <section class="planning bg bg--light pattern" id="planning">
+        <div class="planning__wrapper wrapper container">
           <img
             class="planning__img left"
             src="img/planning.png"
@@ -326,9 +347,13 @@
             height="434"
           />
           <div class="planning__container right">
-            <span class="planning__note note">Когнитивные искажения</span>
-            <h2 class="planning__title title">Ошибка планирования</h2>
-            <p class="planning__summary summary">
+            <span class="planning__note note colored colored--additional"
+              >Когнитивные искажения</span
+            >
+            <h2 class="planning__title title colored colored--secondary">
+              Ошибка планирования
+            </h2>
+            <p class="planning__summary colored colored--secondary summary">
               Неправильно рассчитывать время необходимое для завершения задачи.
             </p>
           </div>
@@ -352,37 +377,46 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <section class="footer__mail mail">
-        <h2 class="mail__title title">
-          Хотите узнать больше? Подпишитесь на обновления
+    <footer class="footer bg bg--primary">
+      <section class="footer__mail bg bg--dark mail">
+        <h2
+          class="mail__title title title--extra-small colored colored--primary"
+        >
+          Хотите узнать больше?<br />
+          Подпишитесь на обновления
         </h2>
         <form class="mail__form" action="#" method="post">
-          <label class="mail__label" for="mail-input">Электронная почта</label>
+          <label class="mail__label colored colored--primary" for="mail-input"
+            >Электронная почта</label
+          >
           <input
             class="mail__input"
             id="mail-input"
             type="email"
             placeholder="Ваша электронная почта"
           />
-          <button class="mail__button" type="submit"></button>
-          <span class="mail__note"
+          <button class="mail__button bg bg--contrast" type="submit"></button>
+          <span class="mail__note colored colored--primary"
             >Подписываясь, вы принимаете
-            <a class="mail__link" href="#">правила сервиса</a>
+            <a class="mail__link colored colored--primary" href="#">правила сервиса</a>
           </span>
         </form>
       </section>
       <section class="footer__copyright copyright">
-        <p class="copyright__text">© 2020 Константин Константинопольский</p>
-        <p class="copyright__text">
+        <p class="copyright__text colored colored--black">
+          © 2020 Константин Константинопольский
+        </p>
+        <p class="copyright__text colored colored--black">
           По материалам статьи
           <a
-            class="copyright__link"
+            class="copyright__link colored colored--link"
             href="https://ru.hexlet.io/blog/posts/cognitive-biases"
             >Yash Ranadive Cognitive Biases in Programming</a
           >
         </p>
-        <a class="copyright__link" href="https://ru.hexlet.io/courses"
+        <a
+          class="copyright__link colored colored--link"
+          href="https://ru.hexlet.io/courses"
           >Курсы программирования Hexlet</a
         >
       </section>

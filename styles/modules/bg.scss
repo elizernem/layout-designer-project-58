@@ -4,6 +4,23 @@
   }
 
   &--primary {
-    color: #ffffff;
+    background-color: #ffffff;
   }
+
+  &--secondary {
+    background-color: #2a2626;
+  }
+
+  &--light {
+    background-color: #F5F4F0;
+  }
+
+  &--contrast {
+    background-color: #fe8a02;
+  }
+
+  &--dark {
+    background-color: #42413C;
+  }
+
 }

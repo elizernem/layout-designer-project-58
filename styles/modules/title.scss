@@ -4,19 +4,24 @@
   font-weight: 400;
   font-size: 60px;
   line-height: 72px;
+  margin-top: 0;
+  margin-bottom: 30px;
 
   &--big {
     font-size: 72px;
     line-height: 86px;
+    margin-bottom: 185px;
   }
 
   &--small {
     font-size: 52px;
     line-height: 62px;
+    margin-bottom: 0;
   }
 
   &--extra-small {
     font-size: 34px;
     line-height: 41px;
+    margin-bottom: 16px;
   }
 }

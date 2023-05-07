@@ -1,12 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans";
   background-color: #ffffff;
   color: #2a2626;
-  max-width: 1440px;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 header,
-section,
-footer {
-  padding: 0 165px;
+section, footer {
+  padding: 100px 165px;
 }

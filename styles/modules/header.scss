@@ -1,5 +1,9 @@
-.header {
-  background-color: #f5f4f0;
+.header__container {
+  margin-bottom: 40px;
+}
+
+.header__text {
+  margin: 0;
 }
 
 .header__img {
@@ -15,10 +19,9 @@
   line-height: 26px;
   display: block;
   width: 148px;
-  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  background-color: #fe8a02;
   padding: 11px 23px;
+  margin-left: 570px;
 }
