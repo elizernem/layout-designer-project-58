@@ -1,11 +1,25 @@
-.biases__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+.biases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  counter-reset: example 0;
 }
 
 .biases__item {
-  background-color: #f5f4f0;
+  padding: 24px;
+  padding-bottom: 35px;
+}
+
+.biases__item::before {
+  content: "" counter(example) "";
+  display: block;
+  font-family: "Neucha";
+  font-size: 64px;
+  line-height: 70px;
+  color: #42413c;
+  counter-increment: example;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .biases__link {
