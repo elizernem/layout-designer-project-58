@@ -45,4 +45,9 @@
   padding: 0;
   top: 84px;
   left: calc(100% - 124px);
+  cursor: pointer;
+}
+
+.mail__button:hover {
+  background-color: #ea7600;
 }

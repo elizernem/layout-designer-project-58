@@ -5,12 +5,7 @@
   counter-reset: example 0;
 }
 
-.biases__item {
-  padding: 24px;
-  padding-bottom: 35px;
-}
-
-.biases__item::before {
+.biases__link::before {
   content: "" counter(example) "";
   display: block;
   font-family: "Neucha";
@@ -23,7 +18,19 @@
 }
 
 .biases__link {
+  display: block;
   text-decoration: none;
+  padding: 24px;
+  padding-bottom: 35px;
+}
+
+.biases__link:hover {
+  background-color: #fe8a02;
+}
+
+.biases__link:hover > p,
+.biases__link:hover > h3, .biases__link:hover::before {
+  color: #ffffff;
 }
 
 .biases__description {
